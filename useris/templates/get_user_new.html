@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requested user details</title>
+</head>
+<body>
+    <p>
+                {% csrf_token %}
+         <h1> ID: {{ object.id }}</h1>
+        <h1>Username: {{ object.name }} </h1> <br>
+         <h1> E-mail: {{ object.email}}</h1>
+
+    </p>
+ <a href="add_user">Add New</a><a href="/">Home</a>
+</body>
+</html>

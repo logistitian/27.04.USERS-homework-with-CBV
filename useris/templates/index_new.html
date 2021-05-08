@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table of users</title>
+</head>
+<body>
+  <ul>
+      {% for i in object_list %}
+
+      <li>
+          ID: {{ i.id }} <br>
+         Username: {{ i.name }} <br>
+        E-mail: {{ i.email }}
+      </li>
+
+      {% endfor %}
+
+    </ul>
+<a href="add_user">Add New</a>
+
+</p>
+</body>
+</html>
